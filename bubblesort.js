@@ -1,4 +1,4 @@
-var swaps, totalSwaps = 0;
+var swaps;
 
 function compare(arr, ind1, ind2) {
 	if (arr[ind1] > arr[ind2])
@@ -28,12 +28,10 @@ function bubbleSort(arr) {
 			// compare first two elts
 			console.log("compared", arr[i], arr[i + 1]);
             compare(arr, i, i+1);
-             console.log("swaps: ", swaps, 'total', totalSwaps);
+             console.log("swaps: ", swaps);
 			// swap if necessary, swaps++
 			// increment elt indices
 		}
-         totalSwaps += swaps;
-	} while (swaps > 0)
-    console.log(totalSwaps);
+    }while (swaps > 0)
 	return arr;
 }
