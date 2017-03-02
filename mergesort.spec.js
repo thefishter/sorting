@@ -10,10 +10,10 @@ describe('Split Array function', function() {
 
 describe('Merge ', function(){
     it('is able to merge even numbered length array into two halves', function() {
-    expect( merge([[5, 8, 6], [10, 2, -3]]) ).toEqual([5, 8, 6, 10, 2, -3]);
+    expect( merge([5, 8, 6], [10, 2, -3]) ).toEqual([5, 8, 6, 10, 2, -3]);
   });
   it('is able to merge odd numbered length array into two halves', function() {
-    expect(merge([[2, 1], [6, 4, 0]])).toEqual([2, 1, 6, 4, 0]);
+    expect(merge([2, 1], [6, 4, 0])).toEqual([2, 1, 6, 4, 0]);
   });
 });
 
